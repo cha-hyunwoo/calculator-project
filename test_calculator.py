@@ -20,3 +20,14 @@ class TestSubtract:
 
     def test_subtract_negative_result(self):
         assert subtract(3, 7) == -4
+
+# ─── 곱셈 ────────────────────────────────
+class TestMultiply:
+    def test_multiply_basic(self):
+        assert multiply(3, 4) == 12
+
+    def test_multiply_by_zero(self):
+        assert multiply(5, 0) == 0
+
+    def test_multiply_negatives(self):
+        assert multiply(-2, 3) == -6
