@@ -31,3 +31,15 @@ class TestMultiply:
 
     def test_multiply_negatives(self):
         assert multiply(-2, 3) == -6
+
+# ─── 나눗셈 ──────────────────────────────
+class TestDivide:
+    def test_divide_basic(self):
+        assert divide(10, 2) == 5.0
+
+    def test_divide_float_result(self):
+        assert divide(7, 2) == 3.5
+
+    def test_divide_by_zero_raises(self):
+        with pytest.raises(ValueError):
+            divide(5, 0)
